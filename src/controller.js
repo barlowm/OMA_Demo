@@ -12,6 +12,8 @@ module.exports = {
     getData : function(req, res){
         let msg = sprintf(Msgs.WeGotIt, config.OMA_DM.Ver, config.OMA_DM.OC);
         res.json(msg);
+            msg = sprintf(Msgs.WeGotIt, Ver, OC);
+            res.json(msg);
     },
 
     postData : function(req, res){

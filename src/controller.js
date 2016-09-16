@@ -10,7 +10,8 @@ module.exports = {
     },
 
     getData : function(req, res){
-        res.json({ message: Msgs.HoorayGet});
+        let msg = sprintf(Msgs.WeGotIt, config.OMA_DM.Ver, config.OMA_DM.OC);
+        res.json(msg);
     },
 
     postData : function(req, res){
@@ -46,10 +47,12 @@ module.exports = {
             console.log(sprintf(Msgs.OCDsp, OC.toString(2)));
 
             msg = sprintf(Msgs.WeGotIt, Ver, OC);
-            res.json({resp: msg});
+            res.json(msg);
         }
         else {
-            res.status(500).send(Msgs.NoHeaderData);
+            // res.status(500).send(Msgs.NoHeaderData);
+            let msg = sprintf(Msgs.WeGotIt, config.OMA_DM.Ver, config.OMA_DM.OC);
+            res.json(msg);
         }
     }
 }

@@ -1,0 +1,17 @@
+{
+  // OMA-DM module configs
+	"OMA_DM": {
+		baseRoute: "/oma",
+		port: 4000
+	},
+	"Msgs" : {
+		Startup : "Express server listening on port %d",
+		Something : "Something is happening!",
+		HoorayGet : "Hooray! Our OMA (Open Mobile Alliance) server is up",
+		HoorayPost : "Hooray! Our OMA (Open Mobile Alliance) can receive data",
+		NoHeaderData : "No Header Data was sent",
+		WeGotIt : "version: %s, optionCount: %s",
+		VerDsp : "Version = %s",
+		OCDsp : "Option Count = %s"
+	}
+}

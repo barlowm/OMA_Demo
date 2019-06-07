@@ -1,5 +1,8 @@
 # OMA
+--- This repository has been archived ---
+
 Sample OMA_DM Server that returns a Package #0
+
 
 This has been tested using Node.JS version 5.7.0
 
